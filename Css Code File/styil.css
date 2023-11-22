@@ -1,0 +1,188 @@
+/*=====================
+----------------------------------
+🪄-Items that have been formatted
+---------------------------------
+1.Recall fonts from Google library
+2.Set some properties on all items
+3.Adjust some properties on the body as well
+4.Setting some properties on the Container Father
+5.Set card-1 and the items inside it
+6.Set card-2 and the items inside it
+7.Set card-3 and the items inside it
+8.Set card-4 and the items inside it
+9.Set card-5 and the items inside it
+=======================*/
+
+/*==============================
+-Recall fonts from Google library
+==================================*/
+@import url("https://fonts.googleapis.com/css2?family=Amiri&family=Barlow+Semi+Condensed:ital,wght@0,500;0,600;1,500;1,600&display=swap");
+/*========================= 
+- Set some properties on all items
+===============================*/
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+/*===================================
+- Adjust some properties on the body as well
+=====================================*/
+body {
+  font-size: 12px;
+  background: #bdbdbd;
+  font-family: "Amiri", serif;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+/*================================
+- Setting some properties on the Container Father
+================================*/
+.container-gird {
+  gap: 15px;
+  margin: 10px;
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
+    "a-card1 a-card1 a-card2 a-card5"
+    "a-card4 a-card3 a-card3 a-card5";
+}
+/*==============================
+- Set card-1 and the items inside it
+==================================*/
+.card-1 {
+  width: auto;
+  height: auto;
+  padding: 20px;
+  grid-area: a-card1;
+  border-radius: 10px;
+  background: #7440c7;
+  background-repeat: no-repeat;
+  background-position: 430px 46px;
+  box-shadow: 0 0 50px 5px #7440c7;
+  background-image: url(/images/bg-pattern-quotation.svg);
+}
+
+.head {
+  display: flex;
+  font-size: 16px;
+}
+.head img {
+  border: 1px solid;
+  margin-right: 10px;
+  border-radius: 50px;
+}
+.head p {
+  margin: 10px;
+  font-weight: 400;
+}
+
+.head p span {
+  opacity: 0.5;
+}
+
+.card-1 h1 {
+  margin: 15px 0;
+  font-size: 23px;
+  line-height: 35px;
+}
+
+.card-1 > p {
+  opacity: 0.5;
+  font-size: 15px;
+  line-height: 20px;
+}
+/*==============================
+- Set card-2 and the items inside it
+==================================*/
+.card-2 {
+  width: auto;
+  padding: 20px;
+  grid-area: a-card2;
+  border-radius: 10px;
+  background: #47556b;
+  box-shadow: 0 0 50px 5px #47556b;
+}
+.card-2 > h1 {
+  font-size: 30px;
+  margin: 15px 0;
+}
+.card-2 > p {
+  font-size: 18px;
+  opacity: 0.5;
+}
+/*==============================
+- Set card-3 and the items inside it
+==================================*/
+.card-3 {
+  width: auto;
+
+  padding: 20px;
+  grid-area: a-card3;
+  border-radius: 10px;
+  background: #1a212e;
+  box-shadow: 0 0 50px 5px #1a212e;
+}
+
+.card-3 > h1 {
+  font-size: 24px;
+  margin: 15px 0;
+}
+
+.card-3 > p {
+  font-size: 15px;
+  opacity: 0.5;
+}
+/*==============================
+- Set card-4 and the items inside it
+==================================*/
+
+.card-4 {
+  padding: 20px;
+  grid-area: a-card4;
+  border-radius: 10px;
+  background: hsl(0, 0%, 100%);
+  box-shadow: 0 0 50px 5px hsl(0, 0%, 19%);
+}
+
+.card-4 > h1 {
+  color: black;
+  margin: 15px 0;
+  font-size: 30px;
+}
+.card-4 > .head > p,
+span {
+  color: black;
+}
+
+.card-4 > p {
+  opacity: 0.5;
+  color: black;
+  font-size: 15px;
+  font-weight: 500;
+}
+/*==============================
+- Set card-5 and the items inside it
+==================================*/
+.card-5 {
+  padding: 20px;
+  grid-area: a-card5;
+  border-radius: 10px;
+  background: hsl(0, 0%, 100%);
+  box-shadow: 0 0 50px 5px hsl(0, 0%, 19%);
+}
+.card-5 > h1 {
+  color: black;
+  margin: 15px 0;
+  font-size: 30px;
+}
+.card-5 .be {
+  opacity: 0.5;
+  color: black;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 55px;
+}
+.card-5 > .head > p,
+span {
+  color: black;
+}
